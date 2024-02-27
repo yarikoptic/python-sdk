@@ -56,9 +56,9 @@ Docker
 Backing Services (Brokers, Data planes)
 ---------------------------------------
 
-A Docker Compose configuration for SDK development is included below. Note that the broker configuration requires access to the INTERSECT Gitlab, and is available at https://code.ornl.gov/intersect/sdk/broker.
+A Docker Compose configuration for SDK development is included below. 
 
-Note that this broker image, and any data plane images, are meant for testing and should not be included in production.
+:WARNING: This broker image, and any data plane images, are meant for testing and should not be included in production.
 
 .. literalinclude:: ../docker-compose.yml
 
@@ -77,3 +77,12 @@ To cleanup:
 .. code-block:: bash
 
    docker compose down -v
+
+Troubleshooting
+^^^^^^^^^^^^^^^
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+| I can not pull the broker image                                                                                                   |
++===================================================================================================================================+
+| this broker configuration requires access to the INTERSECT Gitlab, and is available at https://code.ornl.gov/intersect/sdk/broker |
++-----------------------------------------------------------------------------------------------------------------------------------+
